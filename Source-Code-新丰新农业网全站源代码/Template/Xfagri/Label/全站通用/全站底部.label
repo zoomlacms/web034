@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>842</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="footer"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;span&gt;小鸡快跑&lt;/span&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(26)/}"&gt;营销型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://app.zoomla.cn/Class_2/NodePage.aspx?url={$SiteURL/}&amp;t=m" target="_blank"&gt;手机网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(27)/}"&gt;移动推广系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(28)/}"&gt;网站代运营&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;span&gt;丛林初姬&lt;/span&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(29)/}"&gt;推广培训&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(30)/}"&gt;客服培训&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(31)/}"&gt;增值沙龙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(2)/}"&gt;专属客服&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;span&gt;花千岛众筹&lt;/span&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(16)/}"&gt;没网站怎么办&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(17)/}"&gt;有网站不赚钱&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(18)/}"&gt;想做全网营销&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(19)/}"&gt;网络赚钱系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(8)/}"&gt;案例资讯&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;span&gt;F2F星级农场&lt;/span&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(1)/}"&gt;公司介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(3)/}"&gt;公司团队&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(4)/}"&gt;荣誉资质&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(5)/}"&gt;全国驻点服务&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer_code"&gt;
+&lt;img src="{$CssDir/}images/code.jpg" alt="微信二维码"/&gt;
+&lt;span&gt;微信公众号 | 关注新丰新农业网&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="footer_site text-center"&gt;{$Copyright/}&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

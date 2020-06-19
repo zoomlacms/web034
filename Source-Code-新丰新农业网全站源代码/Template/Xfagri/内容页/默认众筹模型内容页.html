@@ -1,0 +1,88 @@
+﻿{ZL.Source id="众筹模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="众筹模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="众筹模型数据源标签" FD="Tagkey" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}  
+<div class="mysite margin_t10">
+<div class="container">
+<ul class="breadcrumb">
+<li>您当前的位置：<a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="众筹模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ul>
+</div>
+</div> 
+
+<div class="chip_main">
+<div class="container">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 chip_cnt">
+<h1>{SField sid="众筹模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="chip_cotent">
+{SField sid="众筹模型数据源标签" FD="Content" page="0"/}
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 chip_note">
+<ul class="list-unstyled">
+<li>目标：{SField sid="众筹模型数据源标签" FD="mbzj" page="0"/}￥</li>
+<li>支持数：{ZL.Label id="统计指定内容的支持数" GID="{SField sid="众筹模型数据源标签" FD="GeneralID" page="0"/}" /} </li>
+<li>到期时间：{SField sid="众筹模型数据源标签" FD="endDate" page="0"/}</li>
+</ul>
+<a href="javascript:;" id="formbtn" class="btn btn-block btn-danger">支持：{SField sid="众筹模型数据源标签" FD="zcje" page="0"/}</a>
+</div>
+</div>
+</div>
+<form name="form8" id="form8" method="post" action="/PubAction.aspx"> 
+<input name="PubTitle" type="hidden" id="PubTitle" size="50"> 
+<input type="hidden" name="PubID" id="PubID" value="8"></td>
+<input type="hidden" name="PubContentid" id="PubContentid" value="{SField sid="众筹模型数据源标签" FD="GeneralID" page="0"/}"></td>
+<textarea name="PubContent" cols="50" rows="10" id="PubContent" style="display:none;"> </textarea>
+</form> 
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+$("#formbtn").click(function(e) {
+    if('{ZL:GetuserName()/}'==""){
+		window.location="/User/Login.aspx?ReturnUrl=/Item/"+'{SField sid="众筹模型数据源标签" FD="GeneralID" page="0"/}'+".aspx";
+		return;
+	}
+	else
+		$("#PubTitle").val('{ZL:GetuserName()/}');
+	$("#form8").submit();
+}); 
+</script>

@@ -1,0 +1,340 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<style>
+#scolls .navbar-default .navbar-nav li.menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{ color:#eee; background:#008836;}
+</style>
+</head>
+<body>  
+{ZL.Label id="全站头部"/} 
+<div class="c_banner2">
+</div>
+<div class="mysite margin_t10">
+<div class="container">
+<ol class="breadcrumb">
+<li>您当前的位置:<a href="/">首页</a></li>
+<li>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</li>
+</ol>
+</div>
+</div>
+<div class="container">
+<div class="activ_top margin_t10">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 activ_top_l">
+<img src="{$CssDir/}images/poster.jpg"  alt="" />
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 activ_top_r">
+<div class="activ_info">
+<ul class="list-unstyled">
+<li><strong>活动名称：</strong>新丰新首届智农会 "小鸡快跑 一马当先"</li>
+<li><strong>举办城市：</strong>广西</li>
+<li><strong>酒店住宿：</strong>长留山XX酒店</li>
+<li><strong>举办时间：</strong>12月12日-12月15日 距活动开始还有60天</li>
+</ul>
+</div>
+<div class="activ_btn">
+<div class="col-md-6 col-sm-6 col-xs-12 padding0"><button id="myreg_btn" class="btn btn-block btn-warning">立即报名活动</button>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+已有<span>2999</span>人报名
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="activ_phone">
+<i class="fa fa-mobile"></i><span>咨询电话</span><a href="tel:0771-3623681">0771-3623681</a>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div> 
+<div class="container">
+<div class="que_paper">
+<div class="que_title">
+<i class="glyphicon glyphicon-edit"></i> 告诉我们您最想在课上听到什么？
+<ul class="list-inline pull-right">
+<li class="active"></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 que_paper_l">
+<div class="sel_step">
+<div class="step" id="step1">
+<div class="col-lg-7  col-md-7 col-sm-12 col-xs-12 padding5">
+<h4>您对哪些领域感兴趣（最多选择2项）</h4>
+<ul class="list-unstyled myselect">
+<li class="col-xs-4"><a href="javascript:;">开办合作社</a></li>
+<li class="col-xs-4"><a href="javascript:;">现代农业</a></li>
+<li class="col-xs-4"><a href="javascript:;">休闲农业</a></li>
+<li class="col-xs-4"><a href="javascript:;">综合农业</a></li>
+<li class="col-xs-4"><a href="javascript:;">生态农业</a></li>
+<li class="col-xs-4"><a href="javascript:;">家庭农场</a></li>
+<li class="col-xs-4"><a href="javascript:;">产业园</a></li>
+<li class="col-xs-4"><a href="javascript:;">互联网+农业</a></li>
+<li class="col-xs-4"><a href="javascript:;">农业电商</a></li> 
+</ul>
+<input type="hidden" id="steptext1" />
+</div>
+<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 padding5">
+<h4>目前您经营的产品是：</h4>
+<div class="input-group"><span class="input-group-btn"><input type="radio" name="stepradio1" value="0" checked /></span> 
+<textarea rows="5" id="run_pro" class="form-control"></textarea></div>
+<label><input type="radio" name="stepradio1" value="1" />还没开始做</label>
+</div>
+</div>
+<div class="step" id="step2" style="display:none;">
+<ul class="list-unstyled">
+<li><label><input name="stepradio2" type="radio" value="0">如果您已经开始做</label>
+<p>已经投入:<input type="number" name="money" class="text_80 padding5" />万资金,已经流转:<input type="number" name="size" class="text_80 padding5" />亩土地</p>
+<div class="clearfix"></div>
+</li>
+<div class="clearfix"></div>
+<li><label><input name="stepradio2" type="radio" value="1">如果您还没开始做</label>
+<p>计划投入:<input type="number" name="money" class="text_80 padding5" />万资金,计划流转:<input type="number" name="size" class="text_80 padding5" />亩土地</p>
+</li>
+<div class="clearfix"></div>
+<li><label><input name="stepradio2" type="radio" value="2">还没有计划</label></li>
+</ul>
+<input type="hidden" id="steptext2" />
+</div>
+<div class="step" id="step3" style="display:none;">
+<div class="col-lg-7  col-md-7 col-sm-7 col-xs-12 padding5">
+<h4>您面临的重点问题（最多选择2项）</h4>
+<ul class="list-unstyled myselect">
+<li class="col-xs-4"><a href="javascript:;">起步怎么做</a></li>
+<li class="col-xs-4"><a href="javascript:;">如何拿补贴</a></li>
+<li class="col-xs-4"><a href="javascript:;">缺钱怎么办</a></li>
+<li class="col-xs-4"><a href="javascript:;">选到好项目</a></li>
+<li class="col-xs-4"><a href="javascript:;">产品销路难</a></li>
+<li class="col-xs-4"><a href="javascript:;">模式不挣钱</a></li> 
+</ul>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5">
+<h4>直接输入您的问题：</h4> 
+<textarea rows="5" id="run_que" class="form-control"></textarea>
+</div>
+</div>
+<div class="step" id="step4" style="display:none;">
+<h3>请您留下您的姓名及可靠联系方式,确保我们能第一时间联系到您!</h3>
+<ul class="list-unstyled">
+<li><span>姓名</span><input type="text" id="pepertitle" class="form-control text_300" /></li>
+<li><span>手机</span><input type="text" id="pepertel" class="form-control text_300" /></li>
+<div class="clearfix"></div>
+<li><button class="btn btn-warning" id="papersub">提 交</button></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div class="text-center selbtn"><a href="javascript:;" id="nextstep" data-index="1" class="btn btn-warning">下一步</a></div>
+<div id="animate_div">
+<ul class="list-unstyled">
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 que_paper_r">
+<h4>您已选择</h4>
+<div class="has_select">
+<ul class="list-unstyled">
+</ul>
+</div>
+<div class="text-center"><button id="reSelect" class="btn btn-default">重新选择</button></div>
+</div>
+<div class="clearfix"></div>
+<form name="form3" id="form3" method="post" action="/PubAction.aspx">
+<input type="hidden" name="PubID" value="3">
+<input name="PubTitle" type="hidden" id="PubTitle2" /> 
+<input name="Pubtel" type="hidden" id="Pubtel2" />
+<textarea name="PubContent" id="PubContent2" class="form-control" style="display:none;"></textarea>
+</form>
+</div>
+</div>
+<div class="container">
+<div class="meet_pro" style="height:500px;">
+会议流程
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="container">
+<div class="text-center" id="myreg"><i class="fa fa-comments"></i> 在线报名</div>
+</div>
+<div class="container">
+<div class="tojoin_title">{$SiteName/} 六大特点</div>
+<div class="tojoin">
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 tojoin_l">
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#sort1" aria-controls="sort1" role="tab" data-toggle="tab">影响力最大</a></li>
+    <li role="presentation"><a href="#sort2" aria-controls="sort2" role="tab" data-toggle="tab">口碑最好</a></li>
+    <li role="presentation"><a href="#sort3" aria-controls="sort3" role="tab" data-toggle="tab">级别最高</a></li>
+    <li role="presentation"><a href="#sort4" aria-controls="sort4" role="tab" data-toggle="tab">理论最完备</a></li>
+    <li role="presentation"><a href="#sort5" aria-controls="sort5" role="tab" data-toggle="tab">服务机构最多</a></li>
+    <li role="presentation"><a href="#sort6" aria-controls="sort6" role="tab" data-toggle="tab">团队最实干</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="sort1">
+    影响力最大
+    </div>
+    <div role="tabpanel" class="tab-pane" id="sort2">
+    口碑最好
+    </div>
+    <div role="tabpanel" class="tab-pane" id="sort3">
+    级别最高
+    </div>
+    <div role="tabpanel" class="tab-pane" id="sort4">
+    理论最完备
+    </div>
+    <div role="tabpanel" class="tab-pane" id="sort5">
+    服务机构最多
+    </div>
+    <div role="tabpanel" class="tab-pane" id="sort6">
+    团队最实干
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 tojoin_r">
+<img src="{$CssDir/}images/poster.jpg" class="center-block img-responsive" alt="" />
+<h4>会议报名</h4>
+<form name="form7" method="post" action="/PubAction.aspx">
+<input type="hidden" name="PubID" id="PubID" value="7">
+<input type="hidden" name="PubContentid" id="PubContentid" value="{PubContentid/}">
+<input type="hidden" name="PubInputer" id="PubInputer" value="{PubInputer/}">
+<textarea style="display:none;" name="PubContent" id="PubContent">默认内容</textarea>
+<ul class="list-unstyled">
+<li><input name="PubTitle" type="text" id="PubTitle" class="form-control" placeholder="姓名"/></li>
+<li><input name="Pubdw" type="text" id="Pubdw" class="form-control" placeholder="单位" /></li>
+<li><input name="Pubtel" type="text" id="Pubtel" class="form-control" placeholder="手机" /></li>
+<li><input type="submit" name="button" id="button" class="btn btn-block btn-warning" value="提 交" /></li>
+</ul> 
+</form>
+</div>
+<div class="clearfix"></div>
+</div> 
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+var selnum=0; 
+var stepindex=0;
+$(".myselect a").click(function(e) {
+    if($(this).hasClass("active")){
+		$(this).removeClass("active");
+		selnum--;
+	}else{
+		if(selnum<2){
+			$(this).addClass("active");
+			selnum++; 
+		}
+	}
+});  
+var str="";
+$("#nextstep").click(function(e) {
+    stepindex=$(this).data("index");
+	cntcheck(stepindex);
+	if(stepindex)
+	$("#step"+stepindex).slideUp(300);
+	$("#step"+(stepindex+1)).slideDown(1000);
+	selnum=0;
+	$(this).data("index",(stepindex+1));
+	$(".que_title li").eq(stepindex).addClass("active");
+	$("#step"+(stepindex+1)+" ")
+	switch(stepindex){
+		case 1:
+			str="<li>兴趣点：";
+			$("#step1 .myselect a").each(function(index, element) {
+                if($(this).hasClass("active"))
+					str+=$(this).text()+";";	
+            });
+			str+="</li>";  
+			if($("[name=stepradio1]:checked").val()==0)
+				str+="<li>目前做："+$("#run_pro").text()+"</li>";
+			else
+				str+="<li>还未做</li>"		
+			break;	
+		case 2:
+			var arr=new Array('已经投入：','计划投入：','还未计划');
+			var arr2=new Array('已经流转：','计划流转：','还未流转');
+			str="<li>"+arr[$("[name=stepradio2]:checked").val()];
+			str+=$("[name=stepradio2]:checked").parent().parent().find("[name=money]").val()+"万资金</li>";
+			str+="<li>"+arr2[$("[name=stepradio2]:checked").val()];
+			str+=$("[name=stepradio2]:checked").parent().parent().find("[name=size]").val()+"亩土地</li>";
+			break;
+		case 3:
+			str="<li>重点问题：";
+			$("#step3 .myselect a").each(function(index, element) {
+                if($(this).hasClass("active"))
+					str+=$(this).text()+";";	
+            });
+			str+="</li>";
+			if($("#run_que").text()!="")
+				str+="<li>直接问题："+$("#run_que").text()+"</li>";
+			break;
+	}
+//	$("#animate_div ul").html(str);
+//	$("#animate_div").fadeIn();
+//    $("#animate_div").animate({ "right": "-300px" }, 1000);
+// 	setInterval("$('#animate_div').hide();",1500);
+	$(".has_select ul").append(str);
+	$(".myselect a").removeClass("active");
+	$(".que_paper_l input").text("");
+	if(stepindex>2)
+		$("#nextstep").hide();
+});
+$("#myreg_btn").click(function(e) { 
+	$('html,body').animate({scrollTop:$('#myreg').offset().top}, 800);	    
+});
+$("#reSelect").click(function(e) {
+    if($("#step1").css("display")=="block")
+		return;
+	$(".step").hide();
+	$("#step1").slideDown(1000);
+});
+function cntcheck(index){
+	
+}
+</script>
+<script>
+$("#papersub").click(function(e) {
+  	$("#PubTitle2").val($("#pepertitle").val());
+	$("#Pubtel2").val($("#pepertel").val());
+	$("#PubContent2").text($(".que_paper_r ul").text());
+	$("#form3").submit();
+	$("#step4").slideUp(300); 
+}); 
+</script>

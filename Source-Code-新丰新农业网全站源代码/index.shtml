@@ -1,0 +1,622 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>新丰新农业网_首页</title>
+<meta name="Keywords" content="农业,养鸡,新丰新">
+<meta name="Description" content="新丰新农业官方网站">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.1.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Template/Xfagri/style/global.css?Version=20150909" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="top">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-9 top_l">
+<ul class="list-inline">
+<li><a href="/User/Register.aspx">快速注册</a></li>
+<li><a href="#">合作社之家</a></li>
+<li><a href="/User/Order/PreViewOrder.aspx?menu=Orderinfo">我的订单</a></li>
+</ul>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-3 top_r">
+<ul class="list-inline">
+<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-weixin"></i></a></li>
+<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="home_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 home_top_l">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_top_r1">
+<a href="/"><img src="/Template/Xfagri/style/images/logo.png" class="img-responsive" alt="新丰新农业网" /></a>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_top_r2">
+<img src="/Template/Xfagri/style/images/logo2.png" class="img-responsive" alt="新丰新农业·生态农业新东方" />
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 home_top_r">
+<form class="input-group" action="/Search/Searchlist.aspx" method="get" target="_blank"> 
+<div class="input-group">
+<input type="text" name="keyword" class="form-control" id="keyword" />
+<span class="input-group-btn"> 
+<button class="btn btn-danger" type="submit"><i class="fa fa-search"></i> 搜索</button>
+</span>
+</div>
+</form>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 home_phone text-right">
+<span class="glyphicon glyphicon-phone-alt"></span>咨询热线：<strong><a href="tel:0771-3623681" class="all_phone">0771-3623681</a></strong>
+</div>
+</div>
+</div>
+</div>
+<div id="scolls">
+<div class="navbar navbar-default"> 
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="/">首页</a></li>
+<li><a href="/Class_1/Default.aspx" target="_blank">小鸡快跑</a></li>
+<li><a href="/Class_2/Default.aspx" target="_blank">花千岛</a></li>
+<li><a href="/Class_3/Default.aspx" target="_blank">丛林初姬</a></li>
+<li><a href="/Class_4/Default.aspx" target="_blank">互联网+第一书记</a></li>
+<li><a href="/Class_5/Default.aspx" target="_blank">合作社</a></li>
+<li><a href="/Class_6/Default.aspx" target="_blank">F2F星级农场</a></li>
+<li><a href="/Item/1.aspx" target="_blank">关于新丰新</a></li>
+</ul>
+</div>
+</div> 
+</div>
+</div>
+<div class="home_banner">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol> 
+<div class="carousel-inner" role="listbox">
+<div class="item banner_item1 active"> 
+<div class="carousel-caption">
+<h1>丛林初姬<span>小骨，尊上喊你上長留啦！</span></h1>
+<p>大型国宝级珍禽<span>“鸡中熊猫”</span></p>
+<img src="/Template/Xfagri/style/images/code.jpg" alt="微信二维码" /><span class="mwidth">微商小伙伴 花千岛民宿体验</span><strong>-长留山丛林鸡</strong>
+</div>
+</div>
+<div class="item banner_item2"> 
+<div class="carousel-caption">
+ 
+</div>
+</div>
+<div class="item banner_item3"> 
+<div class="carousel-caption">
+ 
+</div>
+</div>
+</div> 
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>  
+</div>
+<div class="home_syn">
+<div class="container">
+<div class="row">
+<ul class="list-unstyled">
+<li><strong>新丰新</strong>,助新弄人丰收新农业</li>
+<li>未来十年，<strong>80%</strong>的优质生态农产品均来自于家庭农场、合作社或联合社！</li>
+<li>未来五年，大多数农产品将按质定价，品控成为生鲜电商发展的第一要素！</li>
+<li>未来三年，电商巨头要进入农村，解决最后一公里的问题只能靠当地的<strong>新农人</strong>!</li>
+<li>我们与第一书记连接起从农场到家庭F2F从服务到管理的数据库信任桥梁</li>
+<li>小鸡快跑，一马当先，我们为解决这三个问题而来！</li>
+<li>我们搭建整个生态农业全产业链的技术、营销、融资与农场托管服务平台，服务新农业！<</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="home_img">
+<div class="home_img_bg">
+<div class="home_img_inner"> 
+<h1><a href="/Item/1.aspx" target="_blank">关于新丰新</a></h1>
+<p style="line-height: 2em; margin-top: 10px; text-indent: 2em;">新丰新，助新农人丰收新农业 ，未来十年，80%的优质生态农产品均来自于家庭农场、合作社或联合社！未来五年， 大多数农产品将按质定价，品控成为生鲜电商发展的第一要素！未来三年，电商巨头要进入农村，解决最后一公里的 问题只能靠当地的新农人！我们与第一书记连接起从农场到家庭F2F从服务到管理的数据库信任桥梁小鸡快跑，一马 当先，我们为解决这三个问题而来！我们搭建整个生态农业全产业链的技术、营销、融资与农场托管服务平台，服 务新农业！什么样的生态农业模式可以让新农人投资者找准切入点，给你一个小步快速试错的工具，让你在最短时 间内了解农业，你听了很多概念的东西，可是回来还是不能落地？</p>
+<span>全新的平台，新丰新帮您一马当先的解决问题，成为一个有优质生态农产品的新农人。</span>
+</div> 
+</div>
+</div>
+<div class="floor_title text-center">
+<div class="container"><span>成功案例</span><span class="pull-right"><a href="/Class_8/Default.aspx" target="_blank">More..</a></span></div></div>
+<div class="floor_border"></div>
+<div class="title_1"> 
+<span class="">历经八年驯养 只为归巢习性</span>
+<p>顶尖月子鸡第一品牌：长留山“小骨”丛林鸡</p>
+</div> 
+<div id="home_roll">
+<div class="container-fluid padding0">
+<div class="home_roll">
+<div class="rollBox">
+<div class="LeftBotton"><img id="d2" onmouseout="ISL_StopUp()" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" alt="" src="/Template/Xfagri/style/images/prev.png">
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Cont" id="ISL_Cont">
+<div class="ScrCont">
+<div id="List1">
+
+<div class="pic">
+<a title="蛋鸡养殖场采取智能化养殖" href="/Item/13.aspx">
+<img class="img-responsive" alt="蛋鸡养殖场采取智能化养殖" src="/UploadFiles/image/20150914/6357782632598333539187483.jpg"></a>
+<h3><a title="蛋鸡养殖场采取智能化养殖" href="/Item/13.aspx">蛋鸡养殖场采取智能化养殖</a></H3></div>
+
+<div class="pic">
+<a title="被误译的“创客运动”" href="/Item/12.aspx">
+<img class="img-responsive" alt="被误译的“创客运动”" src="/UploadFiles/image/20150914/6357782613768855182342255.jpg"></a>
+<h3><a title="被误译的“创客运动”" href="/Item/12.aspx">被误译的“创客运动”</a></H3></div>
+
+<div class="pic">
+<a title="新丰新经典案例" href="/Item/15.aspx">
+<img class="img-responsive" alt="新丰新经典案例" src="/UploadFiles/image/20150914/6357782613768855182342255.jpg"></a>
+<h3><a title="新丰新经典案例" href="/Item/15.aspx">新丰新经典案例</a></H3></div>
+
+<div class="pic">
+<a title="炸鸡战争" href="/Item/14.aspx">
+<img class="img-responsive" alt="炸鸡战争" src="/UploadFiles/image/20150914/6357782607240681277319835.jpg"></a>
+<h3><a title="炸鸡战争" href="/Item/14.aspx">炸鸡战争</a></H3></div>
+
+<div class="pic">
+<a title="大午的逆境融资法" href="/Item/11.aspx">
+<img class="img-responsive" alt="大午的逆境融资法" src="/UploadFiles/image/20150914/6357782607240681277319835.jpg"></a>
+<h3><a title="大午的逆境融资法" href="/Item/11.aspx">大午的逆境融资法</a></H3></div>
+
+<div class="pic">
+<a title="零售商如何应对扩张中的挑战" href="/Item/10.aspx">
+<img class="img-responsive" alt="零售商如何应对扩张中的挑战" src="/UploadFiles/image/20150914/6357782600781612012453133.jpg"></a>
+<h3><a title="零售商如何应对扩张中的挑战" href="/Item/10.aspx">零售商如何应对扩张中的挑战</a></H3></div>
+
+</div>
+<div id="List2"></div></div></div>
+<div class="RightBotton" onmouseout="ISL_StopDown()" onmousedown="ISL_GoDown()" 
+onmouseup="ISL_StopDown()"><img class=" pull-right" id="d3" onmouseout="ISL_StopDown()" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" alt="" src="/Template/Xfagri/style/images/next.png"></div></div>
+<div class="clearfix"></div></div></div></div></div>
+<div class="floor_title text-center">
+<div class="container"><span>产品中心</span><span class="pull-right"><a href="/Class_10/Default.aspx" target="_blank">More..</a></span></div></div>
+<div class="floor_border"></div> 
+<div class="home_pro">
+<div class="container">
+<div class="row">
+<ul class="list-unstyled">
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<div class="pro_item">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#pro_item1" aria-controls="home" role="tab" data-toggle="tab" data-url="/Class_15/Default.aspx">新品上市</a></li>
+<li role="presentation"><a href="#pro_item2" aria-controls="profile" role="tab" data-toggle="tab" data-url="/Class_11/Default.aspx">养鸡设备</a></li> 
+</ul> 
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="pro_item1">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<a href="/Item/50.aspx" target="_blank"><img src="/UploadFiles/zxcp/jpg/2015/9/201509141322115054.jpg" class="center-block img-responsive" alt="桃源鸡—中国土鸡品种" /></a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding5 pro_item_ul">
+<ul class="list-unstyled">
+
+<li><a href="/Item/56.aspx" title="正阳三黄鸡—中国土鸡品种" target="_self" style="">正阳三黄鸡—中国土鸡品种</a></li>
+
+<li><a href="/Item/55.aspx" title="洪山鸡—中国土鸡品种" target="_self" style="">洪山鸡—中国土鸡品种</a></li>
+
+<li><a href="/Item/54.aspx" title="景阳鸡—中国土鸡品种" target="_self" style="">景阳鸡—中国土鸡品种</a></li>
+
+<li><a href="/Item/53.aspx" title="郧阳白羽乌鸡—中国土鸡品种" target="_self" style="">郧阳白羽乌鸡—中国土鸡品种</a></li>
+
+<li><a href="/Item/52.aspx" title="郧阳大鸡—中国土鸡品种" target="_self" style="">郧阳大鸡—中国土鸡品种</a></li>
+
+<li><a href="/Item/51.aspx" title="黄郎鸡—中国土鸡品种" target="_self" style="">黄郎鸡—中国土鸡品种</a></li>
+
+</ul>
+</div>
+<div class="clearfix"></div> 
+</div>
+<div role="tabpanel" class="tab-pane" id="pro_item2">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<a href="/Item/35.aspx" target="_blank"><img src="/UploadFiles/nopic.gif" class="center-block img-responsive" alt="渔网尼龙网养殖网捕鱼网塑料养鸡网爬藤网" /></a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding5 pro_item_ul">
+<ul class="list-unstyled">
+
+<li><a href="/Item/36.aspx" title="热卖荷兰网养殖养鸡鸭鹅养狗圈地圈菜园护栏网隔离网围栏铁丝网  " target="0" style="">热卖荷兰网养殖养鸡鸭鹅养狗圈地</a></li>
+
+<li><a href="/Item/35.aspx" title="渔网尼龙网养殖网捕鱼网塑料养鸡网爬藤网" target="0" style="">渔网尼龙网养殖网捕鱼网塑料养鸡</a></li>
+
+<li><a href="/Item/34.aspx" title="隔离网 " target="0" style="">隔离网 </a></li>
+
+<li><a href="/Item/33.aspx" title="无结网塑料鸡网" target="0" style="">无结网塑料鸡网</a></li>
+
+<li><a href="/Item/32.aspx" title="六角网" target="0" style="">六角网</a></li>
+
+<li><a href="/Item/20.aspx" title="铁丝网" target="0" style="">铁丝网</a></li>
+
+</ul>
+</div> 
+<div class="clearfix"></div> 
+</div> 
+</div>
+<div class="clearfix"></div> 
+</div>
+<div class="clearfix"></div>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<div class="pro_item">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#pro_item3" aria-controls="home" role="tab" data-toggle="tab" data-url="/Class_12/Default.aspx">养鸡材料</a></li>
+</ul> 
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="pro_item3">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<a href="/Item/48.aspx" target="_blank"><img src="/UploadFiles/yjcl/jpg/2015/9/201509141322307004.jpg" class="center-block img-responsive" alt="蛋鸡每公斤饲料中维生素含量标准" /></a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding5 pro_item_ul">
+<ul class="list-unstyled">
+
+<li><a href="/Item/49.aspx" title="养鸡场选好预混料养鸡成功一半" target="0" style="">养鸡场选好预混料养鸡成功一半</a></li>
+
+<li><a href="/Item/48.aspx" title="蛋鸡每公斤饲料中维生素含量标准" target="0" style="">蛋鸡每公斤饲料中维生素含量标准</a></li>
+
+<li><a href="/Item/47.aspx" title="春季产蛋鸡饲料调整4 个变化" target="0" style="">春季产蛋鸡饲料调整4 个变化</a></li>
+
+<li><a href="/Item/46.aspx" title="蛋鸡各时期用料计算方法" target="0" style="">蛋鸡各时期用料计算方法</a></li>
+
+<li><a href="/Item/45.aspx" title="蛋鸡节料的小技巧" target="0" style="">蛋鸡节料的小技巧</a></li>
+
+<li><a href="/Item/44.aspx" title="“三伏天”怎样喂鸡" target="0" style="">“三伏天”怎样喂鸡</a></li>
+
+</ul>
+</div>
+<div class="clearfix"></div> 
+</div> 
+</div>
+<div class="clearfix"></div> 
+</div>
+<div class="clearfix"></div>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<div class="pro_item">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#pro_item5" aria-controls="home" role="tab" data-toggle="tab" data-url="/Class_13/Default.aspx">饲养品种</a></li>
+</ul> 
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="pro_item5">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<a href="/Item/38.aspx" target="_blank"><img src="/UploadFiles/image/20150914/6357783234113280257056253.jpg" class="center-block img-responsive" alt="泰和鸡" /></a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding5 pro_item_ul">
+<ul class="list-unstyled">
+
+<li><a href="/Item/42.aspx" title="旧院黑鸡" target="0" style="">旧院黑鸡</a></li>
+
+<li><a href="/Item/41.aspx" title="瑶鸡" target="0" style="">瑶鸡</a></li>
+
+<li><a href="/Item/40.aspx" title="霞烟鸡" target="0" style="">霞烟鸡</a></li>
+
+<li><a href="/Item/39.aspx" title="文昌鸡" target="0" style="">文昌鸡</a></li>
+
+<li><a href="/Item/38.aspx" title="泰和鸡" target="0" style="">泰和鸡</a></li>
+
+<li><a href="/Item/37.aspx" title="泸宁鸡" target="0" style="">泸宁鸡</a></li>
+
+</ul>
+</div>
+<div class="clearfix"></div> 
+</div> 
+</div> 
+<div class="clearfix"></div> 
+</div>
+<div class="clearfix"></div>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<div class="pro_item">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#pro_item7" aria-controls="home" role="tab" data-toggle="tab" data-url="/Class_14/Default.aspx">销售产品</a></li>
+</ul> 
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="pro_item7">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<a href="/Item/43.aspx" target="_blank"><img src="/UploadFiles/image/20150914/6357783273852455838118531.png" class="center-block img-responsive" alt="有机柴鸡蛋" /></a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding5 pro_item_ul">
+<ul class="list-unstyled">
+
+<li><a href="/Item/43.aspx" title="有机柴鸡蛋" target="_self" style="">有机柴鸡蛋</a></li>
+
+<li><a href="/Item/21.aspx" title="平养鸡" target="_self" style="">平养鸡</a></li>
+
+</ul>
+</div>
+<div class="clearfix"></div> 
+</div> 
+</div>
+<div class="clearfix"></div> 
+</div>
+<div class="clearfix"></div>
+</li>
+</ul>
+</div>
+</div>
+</div>  
+<div class="new_pro">
+<div class="container">
+<h4 class="text-center">OUR PRODUCT</h4>
+<div class="new_pro_t text-center">新丰新产品</div>
+<ul class="list-unstyled text-center">
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Item/22.aspx"><i class="new_pro1"></i>
+<span>稳定的现金流</span></a>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Item/23.aspx"><i class="new_pro2"></i> 
+<span>合理的盈利模式</span></a>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Item/24.aspx"><i class="new_pro3"></i> 
+<span>小步快速是错的工具</span></a>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Item/25.aspx"><i class="new_pro4"></i> 
+<span>基于合作社为基础</span></a>
+</li>
+</ul> 
+</div>
+</div> 
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<span>小鸡快跑</span>
+<ul class="list-unstyled">
+<li><a href="/Item/26.aspx">营销型</a></li>
+<li><a href="http://app.zoomla.cn/Class_2/NodePage.aspx?url=http://win22:93&t=m" target="_blank">手机网站</a></li>
+<li><a href="/Item/27.aspx">移动推广系统</a></li>
+<li><a href="/Item/28.aspx">网站代运营</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<span>丛林初姬</span>
+<ul class="list-unstyled">
+<li><a href="/Item/29.aspx">推广培训</a></li>
+<li><a href="/Item/30.aspx">客服培训</a></li>
+<li><a href="/Item/31.aspx">增值沙龙</a></li>
+<li><a href="/Item/2.aspx">专属客服</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<span>花千岛众筹</span>
+<ul class="list-unstyled">
+<li><a href="/Item/16.aspx">没网站怎么办</a></li>
+<li><a href="/Item/17.aspx">有网站不赚钱</a></li>
+<li><a href="/Item/18.aspx">想做全网营销</a></li>
+<li><a href="/Item/19.aspx">网络赚钱系统</a></li>
+<li><a href="/Class_8/Default.aspx">案例资讯</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<span>F2F星级农场</span>
+<ul class="list-unstyled">
+<li><a href="/Item/1.aspx">公司介绍</a></li>
+<li><a href="/Item/3.aspx">公司团队</a></li>
+<li><a href="/Item/4.aspx">荣誉资质</a></li>
+<li><a href="/Item/5.aspx">全国驻点服务</a></li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center footer_code">
+<img src="/Template/Xfagri/style/images/code.jpg" class="center-block img-responsive" alt="微信二维码"/>
+<span>微信公众号 | 关注新丰新</span>
+<p></p>
+</div>
+</div>
+<div class="footer_site text-center"><script src="/js/mobile.js"></script>
+Copyright &copy; 2015 新丰新农业网 All Rights Reserved  电话:<a href="tel:0771-3623681" class="all_phone">0771-3623681</a></div>
+</div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">扫一扫二维码，关注新丰新官方微信</h4>
+      </div>
+      <div class="modal-body">
+        <img src="/Template/Xfagri/style/images/code.jpg" class="center-block img-responsive" alt="微信二维码" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">退出</button> 
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<SCRIPT>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+//左右滚动效果
+var Speed = 3; //速度(毫秒)
+var Space = 7; //每次移动(px)
+var PageWidth = 400; //翻页宽度
+var fill = 0; //整体移位
+var MoveLock = false;
+var MoveTimeObj;
+var Comp = 0;
+var AutoPlayObj = null;
+GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+GetObj('ISL_Cont').scrollLeft = fill;
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);}
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();}
+AutoPlay();
+function GetObj(objName)
+{
+if(document.getElementById)
+return eval('document.getElementById("'+objName+'")')
+else
+return eval('document.all.'+objName)
+}
+function AutoPlay()
+{//自动滚动
+clearInterval(AutoPlayObj);
+AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',3000); //间隔时间
+}
+function ISL_GoUp()
+{ //上翻开始
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+MoveTimeObj = setInterval('ISL_ScrUp();',Speed);
+}
+function ISL_StopUp()
+{ //上翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0)
+{
+Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+CompScr();
+}
+else
+MoveLock = false;
+AutoPlay();
+}
+function ISL_ScrUp()
+{ //上翻动作
+if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth}
+GetObj('ISL_Cont').scrollLeft -= Space ;
+}
+function ISL_GoDown(){ //下翻
+clearInterval(MoveTimeObj);
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+ISL_ScrDown();
+MoveTimeObj = setInterval('ISL_ScrDown()',Speed);
+}
+function ISL_StopDown(){ //下翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 )
+{
+Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+CompScr();
+}
+else{MoveLock = false;}
+AutoPlay();
+}
+function ISL_ScrDown()
+{ //下翻动作
+if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;}
+GetObj('ISL_Cont').scrollLeft += Space ;
+}
+function CompScr()
+{
+var num;
+if(Comp == 0){MoveLock = false;return;}
+if(Comp < 0)
+{ //上翻
+if(Comp < -Space)
+{
+Comp += Space;
+num = Space;
+}
+else
+{
+num = -Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft -= num;
+setTimeout('CompScr()',Speed);
+}
+else
+{ //下翻
+if(Comp > Space)
+{
+Comp -= Space;
+num = Space;
+}
+else
+{
+num = Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft += num;
+setTimeout('CompScr()',Speed);
+}
+}
+
+$(".pro_item .nav-tabs li a").click(function(e) {
+	if($(this).parent().hasClass("active"))
+		window.location.href=$(this).data("url");
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+if(IsPC())
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打967110')");
+
+</SCRIPT>

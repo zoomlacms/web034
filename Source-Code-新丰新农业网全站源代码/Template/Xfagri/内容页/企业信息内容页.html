@@ -1,0 +1,78 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<style>
+.i_us_l li .info{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}{ background:url({$CssDir/}images/syn_point.png) #1DC010 left no-repeat; background-position:20px 50%; color:#fff;}
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}   
+<div class="crop_banner">
+<p>治大国如烹小鲜</p>
+<p>大农业看新丰新</p>
+</div> 
+<div class="mysite margin_t10">
+<div class="container">
+<ul class="breadcrumb">
+<li>您当前的位置：<a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ul>
+</div>
+</div>
+<div class="i_us">
+<div class="container">
+<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 padding0 i_us_l">
+<ul class="list-unstyled">
+{ZL.Label id="输出企业信息列表" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" TitleNum="20" ShowNum="5" /}
+</ul>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 i_us_cnt">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="mycontent">
+{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html> 
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+ 
+</script>

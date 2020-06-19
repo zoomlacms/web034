@@ -1,0 +1,325 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link href="{$CssDir/}jquery.fullPage.css" rel="stylesheet"/>
+<script src="{$CssDir/}js/jquery-1.8.3.min.js"></script>
+<script src="{$CssDir/}js/jquery-ui-1.10.3.min.js"></script>
+<script src="{$CssDir/}js/jquery.fullPage.min.js"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.fn.fullpage({
+			'verticalCentered': false,
+			'anchors': ['page1', 'page2', 'page3', 'page4','page5', 'page6', 'page7', 'page8','page9'],
+			'css3': true,
+			'navigation': true,
+			'navigationPosition': 'right',
+			'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+			
+			'afterLoad': function(anchorLink, index){
+				if(index == 2){
+					$('#iphone3, #iphone2, #iphone4').addClass('active');
+				}
+				$('#infoMenu').toggleClass('whiteLinks', index ==4);
+				
+			},
+			
+			'onLeave': function(index, direction){
+				if (index == 3 && direction == 'down'){
+					$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+				}
+				else if(index == 3 && direction == 'up'){
+					$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+				}
+				
+				$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+				$('#staticImg').toggleClass('moveDown', index == 3 && direction == 'down');	
+			},
+			
+			afterRender: function(){
+				$('#infoMenu').appendTo('body');
+				
+				$('#githubLink, .twitter-share-button').appendTo('body');
+			}
+
+		});
+	});
+</script>
+<style>
+#scolls{ padding-top:50px;}
+#scolls .navbar-default{ background:none;}
+.logo{ margin-top:-50px; margin-bottom:-50px; }#scolls .navbar-default .navbar-nav li a,#scolls .navbar-default .navbar-nav li a:hover, #scolls 
+.navbar-default .navbar-nav li a:focus{ color:#333; background:none;}
+.c_banner{ background-image:url({SField sid="节点栏目信息数据源" FD="NodePicUrl" page="0"/});}
+#section0{ background:url({$CssDir/}images/chips1.jpg) center no-repeat; background-size:cover;}
+img{ -webkit-transition:all 0.7s ease-out;-moz-transition:all 0.7s ease-out;-o-transition:all 0.7s ease-out;transition:all 0.7s ease-out}
+.section0_p1{ position:absolute; left:40%; top:20%;}
+.section0_p2{ position:absolute; right:20%; top:10%;}
+.section0_p3{ position:absolute; top:40%; right:25%;}
+.section0_p4{ position:absolute; top:50%; right:25%;}
+.section0_p4 li{ padding-top:35px; padding-left:25px; padding-right:25px; width:100px; height:100px; text-align:center; font-family:"微软雅黑"; color:#fff; background:url({$CssDir/}images/chips1_p3.png) center no-repeat;}
+.section0_p5{ position:absolute; bottom:50px; left:50%; font-size:1.5em; font-family:"微软雅黑"; color:#fff;}
+#section1{ padding-top:50px;}
+.section1_title{ margin-bottom:30px;}
+.section_syn h3{ margin-left:10px; padding-left:20px; border-left:3px solid rgba(156,26,28,1.00); font-weight:bold;}
+.section_syn p{ margin-left:10px; line-height:26px;}
+.section_syn li{ position:relative; margin-bottom:10px;}
+.section_syn li img{ width:100%; height:320px;}
+.section_syn li span{ position:absolute; bottom:10px; left:20px; padding:5px 20px; border-radius:5px; background:rgba(255,255,255,0.6); font-size:18px; font-weight:bold; color:#000;}
+#section2{ padding-top:50px;}
+.section2_syn li img{ width:100%; height:500px;}
+#section3{ position:relative; }
+#section3 .section1_title{ margin-bottom:100px;}
+#section3 .section3_center{ position:absolute; top:5%; bottom:15%; left:50%; margin-left:-500px; padding:30px; width:1000px; background:rgba(255,255,255,0.5); box-shadow:0 0 5px 2px rgba(235,235,235,0.7); z-index:999;}
+#section3 .section3_item{ position:absolute; padding:20px 50px;  width:50%; }
+#section3 .section3_item1{ top:0; left:0; bottom:50%;}
+#section3 .section3_item2{ top:50%; left:0; bottom:0;}
+#section3 .section3_item3{ top:0; left:50%; bottom:50%;}
+#section3 .section3_item4{ top:50%; left:50%; bottom:0;}
+#section4{ padding-top:50px; background:rgba(246,252,234,1);}
+.section4_syn{ float:right; padding-top:50px; padding-right:50px;}
+.section4_cnt li { margin-bottom:30px;}
+.section4_cnt li img{ width:500px; max-width:100%; height:300px;}
+#section5{ padding-top:150px; background:rgba(246,252,234,1);}
+.section5_syn{ float:right; padding-top:50px; padding-right:150px;}
+#section6{ background:rgba(247,251,234,1);}
+#section6 .section_title{ padding-top:20px; padding-bottom:30px; background:#fff;}
+.section_title_border{ margin-top:-24px; height:1px; border-bottom:1px solid #333;}
+.section6_cnt li{ height:250px;}
+.section6_cnt li strong{ display:block; float:left; margin-left:50px; width:30px; font-size:24px;}
+.section6_cnt li p{ float:left; width:50px; padding-left:20px; padding-right:20px; border-left:1px solid #666;}
+#section7{ padding-top:50px;}
+.section7_cnt img{ margin-top:30px;}
+#section8{ background:rgba(246,252,234,1);}
+#section8 .section_title{ padding-top:50px; padding-bottom:50px; background:#fff;}
+</style>
+</head>
+<body> 
+<div class="section" id="section0">  
+<div id="scolls">
+<div class="navbar navbar-default"> 
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="logo"><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(1)/}" target="_blank">小鸡快跑</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(2)/}" target="_blank">花千岛</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(3)/}" target="_blank">丛林初姬</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}" target="_blank">互联网+第一书记</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(5)/}" target="_blank">合作社</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(6)/}" target="_blank">F2F星级农场</a></li>
+<li><a href="{ZL:GetInfoUrl(1)/}" target="_blank">关于新丰新</a></li>
+</ul>
+</div>
+</div>
+</div> 
+<div class="section0_p1">
+<img src="{$CssDir/}images/chips1_p4.png" alt="丛林初姬" />
+</div>
+<div class="section0_p2">
+<img src="{$CssDir/}images/chips1_p2.png" alt="丛林初姬" />
+</div>
+<div class="section0_p3">
+<img src="{$CssDir/}images/chips1_p1.png" alt="丛林初姬" />
+</div>
+<div class="section0_p4">
+<ul class="list-inline">
+<li><span>适合孕产妇</span></li>
+<li><span>适合小家庭</span></li>
+<li><span>适合猪肚鸡</span></li>
+</ul>
+</div>
+<div class="section0_p5">
+野外放养体验基地：长留山 花千岛 灯草岭 桫椤谷 
+</div>
+</div>
+
+<div class="section" id="section1">
+<div class="container">
+<div class="section1_item section1_l"> 
+<div class="section1_title"><img src="{$CssDir/}images/chips2_p1.png" class="center-block img-responsive" alt="丛林初姬" /></div> 
+<div class="section_syn section1_syn">
+<h3>原始鸡种 家鸡祖先</h3>
+<p>丛林鸡由野生原鸡驯化而来，原鸡列入《世界自然保护联盟》(IUCN)  2012年濒危物种红色名录ver 3.1-低危（LC）。属原国家Ⅱ级重点保护动物。在长达八年的提纯驯化并成功保种后经广西林业厅向国家申请批准后方才可以商业化发展。</p>
+<ul class="list-unstyled">
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/chicken1.jpg" alt="原鸡"/>
+<span>原鸡</span>
+</li>
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/chicken2.jpg" alt="野生期"/>
+<span>野生期</span>
+</li>
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/chicken3.jpg" alt="丛林鸡"/>
+<span>丛林鸡</span>
+</li>
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/chicken4.jpg" alt="家鸡"/>
+<span>家鸡</span>
+</li>
+</ul>
+</div> 
+</div> 
+</div>
+</div>
+<div class="section moveDown" id="section2">
+<div class="section1_title"><img src="{$CssDir/}images/chips2_p1.png" class="center-block img-responsive" alt="" /></div> 
+<div class="container">
+<div class="section_syn section2_syn">
+<h3>研究团队</h3>
+<p>    
+丛林鸡由40年从事野生大熊猫等动物保护，在荒野中追求人生价值的科学家北
+京大学潘文石教授带领他的团队和助理研究员黄勋先生在崇左生物多样性研究
+基地与白头叶猴共同进行野外课题研究，是潘教授为了保护当地生态环境而特
+别研发以发展当地经济的林下特色经济项目。</p>  
+<ul class="list-unstyled">
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/expert.jpg" class="center-block img-responsive" alt="" />
+</li>
+<li class="col-md-6 col-xs-12 padding10">
+<img src="{$CssDir/}images/monkey.jpg" class="center-block img-responsive" alt="" />
+</li>
+</ul>
+</div>
+</div>   
+</div>
+<div class="section moveDown" id="section3">
+<div class="section3_center">
+<div class="section1_title"><img src="{$CssDir/}images/chips3_title.png" class="center-block img-responsive" alt="" /></div>
+<img src="{$CssDir/}images/chips3_cnt.png" class="center-block img-responsive" alt="" />	 
+</div>
+<div class="section3_item section3_item1">
+<img src="{$CssDir/}images/chips3_p1.jpg" class="center-block img-responsive" alt="" />	 
+</div>
+<div class="section3_item section3_item2">
+<img src="{$CssDir/}images/chips3_p2.jpg" class="center-block img-responsive" alt="" />	 
+</div>
+<div class="section3_item section3_item3">
+<img src="{$CssDir/}images/chips3_p3.jpg" class="center-block img-responsive" alt="" />	 
+</div>
+<div class="section3_item section3_item4">
+<img src="{$CssDir/}images/chips3_p4.jpg" class="center-block img-responsive" alt="" />	 
+</div>
+</div>
+<div class="section moveDown" id="section4">
+<div class="section1_title"><img src="{$CssDir/}images/chips4_title.jpg" class="center-block img-responsive" alt="" /></div>
+<div class="section4_cnt">
+<ul class="list-unstyled">
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="section_syn section4_syn">
+<h3>《花千骨》主要拍摄地：长留山 花千岛</h3>
+<p>丛林鸡野外饲养示范基地，会员积分可报名参观体验。</p>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips4_p1.jpg" class="img-responsive" alt="" />	
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips4_p2.jpg" class="pull-right img-responsive" alt="" />	
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips4_p3.jpg" class="img-responsive" alt="" />	
+</li>
+</ul>
+</div>  
+</div>
+<div class="section moveDown" id="section5">
+<div class="section4_cnt">
+<ul class="list-unstyled">
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="section_syn section5_syn">
+<h3>大新县国宝级珍禽“鸡中熊猫”</h3> 
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips5_p1.jpg" class="img-responsive" alt="" />	
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips5_p2.jpg" class="pull-right img-responsive" alt="" />	
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}images/chips5_p3.jpg" class="img-responsive" alt="" />	
+</li>
+</ul>
+</div>	 
+</div>
+<div class="section moveDown" id="section6">
+<div class="section_title"><img src="{$CssDir/}images/chips6_title.jpg" class="center-block img-responsive" alt="" /><div class="section_title_border"></div></div>
+<div class="container">
+<div class="section6_cnt">	
+<ul class="list-unstyled">     
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<strong>花千骨</strong>
+<p>的<br/>“<br/>小骨<br/>”<br/>丛林鸡<br/>。</p>
+<p>自由自在游弋于山间</p>
+<p>它是性格天真敢爱敢恨</p>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p2.jpg" class="center-block img-responsive" alt="" />
+<span>长留山花千骨------赵丽颖</span>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p3.jpg" class="center-block img-responsive" alt="" />
+<span>喀斯特山林“小骨”-------丛林鸡</span>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p4.jpg" class="center-block img-responsive" alt="" />
+<span>长留上仙-------白子画</span>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p5.jpg" class="center-block img-responsive" alt="" />
+<span>喀斯特山林“白子画”-------白头叶猴</span>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<strong>白子画</strong>
+<p>超凡而孤高冰凉淡漠</p>
+<p>流泻如水如月华</p>
+<p>淡然带着冰冷的目光</p>
+<p>着一袭白袍</p>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<strong>杀阡陌</strong>
+<p>小不点 你要记得我…… </p>
+<p>仙界之战中为小骨杀上长留</p>
+</li>
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p7.jpg" class="center-block img-responsive" alt="" />
+<span>妖魔之王------杀阡陌</span>
+</li> 
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<img src="{$CssDir/}images/chips6_p8.jpg" class="center-block img-responsive" alt="" />
+<span>仙界之战中为小骨杀上长留 小不点 你要记得我…… </span>
+</li>
+</ul> 
+</div>    
+</div>     
+</div>
+<div class="section moveDown" id="section7">
+<div class="section_title"><img src="{$CssDir/}images/chips7_title.jpg" class="center-block img-responsive" alt="" /></div>
+<div class="section7_cnt">
+	 <img src="{$CssDir/}images/chips7_p1.jpg" class="center-block img-responsive" alt="" />
+	 <img src="{$CssDir/}images/chips7_p2.jpg" class="center-block img-responsive" alt="" />
+     </div>
+</div>
+<div class="section moveDown" id="section8">
+<div class="section_title"><img src="{$CssDir/}images/chips8_title.jpg" class="center-block img-responsive" alt="" /></div>
+<div class="section7_cnt">
+	 <img src="{$CssDir/}images/chips8_p1.jpg" class="center-block img-responsive" alt="" />
+     </div>	 
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="api_SiteCount, App_Web_wui1cire" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>
